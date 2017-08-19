@@ -1,5 +1,5 @@
 # tidydata-assignment
-This script takes the data from a [study on wearable data](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) and creates a tidy dataset which meets the following conditions:
+This script takes the data from a [study on wearable data](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) [1] and creates a tidy dataset which meets the following conditions:
 - A single dataset that combines training and test data
 - Only the columns with mean and std values are included
 - Descriptive activity names and variables are used
@@ -13,3 +13,5 @@ This script takes the data from a [study on wearable data](http://archive.ics.uc
 4. The columns with "mean" and "std" in the variable names are subsetted into the `comb` data frame.
 5. The activity numbers are replaced with the descriptive activity labels in the `comb2` data frame.
 6. The `comb2` data frame is grouped by subject and activity, and summarized using the `mean` function to create the final `comb3` data frame for export.
+
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
